@@ -47,7 +47,7 @@ namespace BookStore.Controllers
             return bookList;
         }
 
-        [HttpGet("{id}") ]
+        [HttpGet("{id}")]
         public Book GetById(int id)
         {
             var book = BookList.Where(book => book.Id == id).SingleOrDefault();
@@ -63,8 +63,8 @@ namespace BookStore.Controllers
 
         // POST
         [HttpPost]
-        
-        public IActionResult AddBook ([FromBody] Book newBook )
+
+        public IActionResult AddBook([FromBody] Book newBook)
         {
             var book = BookList.SingleOrDefault(x => x.Title == newBook.Title);
             if (book is not null) // if (book != null ) şeklinde de yazılabilirdi.
@@ -73,7 +73,7 @@ namespace BookStore.Controllers
             return Ok();
         }
 
-        [HttpPut ("{id}")]
+        [HttpPut("{id}")]
 
         public IActionResult UpdateBook(int id, [FromBody] Book updatedBook)
         {
@@ -88,6 +88,19 @@ namespace BookStore.Controllers
 
             return Ok();
         }
+
+        [HttpDelete("{id}")]
+
+        public IActionResult DeleteBook(int id)
+        {
+            var book = BookList.SingleOrDefault(x => x.Id == id);
+            if (book is null)
+                return BadRequest();
+            BookList.Remove(book);
+            return Ok();
+        }
+
+    
 
     }
 }
