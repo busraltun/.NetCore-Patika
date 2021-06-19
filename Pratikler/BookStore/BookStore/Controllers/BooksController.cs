@@ -99,8 +99,5 @@ namespace BookStore.Controllers
             BookList.Remove(book);
             return Ok();
         }
-
-    
-
     }
 }
