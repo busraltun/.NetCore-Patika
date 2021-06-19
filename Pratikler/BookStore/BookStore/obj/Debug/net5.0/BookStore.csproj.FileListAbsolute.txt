@@ -27,3 +27,8 @@ C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\obj\Debug\net5.0\BookStore
 C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\obj\Debug\net5.0\ref\BookStore.dll
 C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\obj\Debug\net5.0\BookStore.pdb
 C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\obj\Debug\net5.0\BookStore.genruntimeconfig.cache
+C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Desktop\Patika\Pratikler\BookStore\BookStore\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
