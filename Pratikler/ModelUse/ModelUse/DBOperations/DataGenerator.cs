@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookStore.DBOperations
+namespace ModelUse.DBOperations
 {
     public class DataGenerator
     {
-        public static void Initialize(IServiceProvider serviceProvider ) //Burayı program.cs e bağlayacağız
+        public static void Initialize(IServiceProvider serviceProvider) //Burayı program.cs e bağlayacağız
         {
             using (var context = new BookStoreDbContext(serviceProvider.GetRequiredService<DbContextOptions<BookStoreDbContext>>()))
             {
-                if (context.Books.Any()) 
+                if (context.Books.Any())
                 {
                     return;
                     //eğer burada hiç veri varsa bir şey dönmesin, çalıştırma
@@ -30,7 +30,7 @@ namespace BookStore.DBOperations
 
             new Book
             {
-               // Id = 2,
+                // Id = 2,
                 Title = "Herland",
                 GenreId = 2, // science fiction
                 PageCount = 250,
